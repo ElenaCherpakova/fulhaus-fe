@@ -3,6 +3,8 @@ import { formatCurrency } from '../utilities/formatCurrency';
 import { MdAddShoppingCart } from 'react-icons/md';
 import { BiTrash } from 'react-icons/bi';
 import styles from './StoreItem.module.css';
+import { FaStar } from 'react-icons/fa';
+
 import { useShoppingCart } from '../context/ShoppingCartContext';
 
 function StoreItem({
@@ -34,6 +36,11 @@ function StoreItem({
         }}
       />
       <p>{fulhausCategory.name}</p>
+      <div className={styles.starRating}>
+        {[...Array(5)].map((_, index) => {
+          return <FaStar key={index} />;
+        })}
+      </div>
       <div className={styles.productShopping}>
         <span className={styles.productPrice}>
           {formatCurrency(retailPrice)}
