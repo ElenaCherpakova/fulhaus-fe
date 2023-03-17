@@ -30,13 +30,12 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .shopCardIcon {
-    position: relative;
     border: none;
     background-color: rgb(229, 216, 216);
     margin-top: 1rem;
     padding: 0.5rem;
-    left: 85%;
-    bottom: 51%;
+    left: 62%;
+    bottom: 1.5%;
   }
 }
 
@@ -44,12 +43,22 @@
   .shopCardIcon {
     left: 80%;
     bottom: 45%;
+    position: fixed;
   }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (min-width: 514px) and (max-width: 576px) {
   .shopCardIcon {
-    left: 60%;
-    bottom: 25%;
+    left: 75%;
+    bottom: 45%;
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 513px) {
+  .shopCardIcon {
+    left: 75%;
+    bottom: 60%;
+    position: fixed;
   }
 }
