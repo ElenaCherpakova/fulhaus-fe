@@ -23,7 +23,7 @@ function ShoppingCart({ isOpen }) {
       className={`fixed inset-0 bg-gray-900 bg-opacity-50 ${
         isOpen ? '' : 'hidden'
       }`}>
-      <div className='fixed inset-y-0 right-0 w-100 bg-white shadow-lg xsm:max-w-xs'>
+      <div className='fixed inset-y-0 right-0 w-100 bg-white shadow-lg xsm:max-w-xs overflow-y-auto' >
         <div className='p-2 font-bold text-lg bg-gray-100'>MY ORDER</div>
         <div className='p-4 flex flex-col space-y-1 flex-1 overflow-y-scroll'>
           {cartItems.map((item) => (

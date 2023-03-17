@@ -9,7 +9,7 @@
 
 .container img {
   width: 30%;
-  height: 100vh;
+
   object-fit: cover;
   object-position: 100% 50%;
 }
