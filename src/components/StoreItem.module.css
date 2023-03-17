@@ -1,0 +1,77 @@
+.productShopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.9rem 0 0.5rem 0;
+}
+
+.productPrice {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.shoppingCard {
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(229, 216, 216);
+}
+
+.shoppingCard > svg {
+  color: red;
+  font-size: 1.2rem;
+}
+
+
+.addRemove {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.addRemoveButton,
+.remove {
+  width: 2rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(229, 216, 216);
+}
+
+.plusMinus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 5px 0;
+}
+.remove {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: rgb(229, 216, 216);
+  color: red;
+}
+.remove > svg {
+  color: red;
+  font-size: 1rem;
+}
+.quantity {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+  .productShopping {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .productPrice {
+    font-size: 0.9rem;
+  }
+}
