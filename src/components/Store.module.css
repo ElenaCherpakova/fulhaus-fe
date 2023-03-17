@@ -1,6 +1,5 @@
 .cardWrapper {
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -46,7 +45,7 @@
 }
 
 /* Mobile devices (small screens) */
-@media only screen and (min-width: 288px) and (max-width: 767px)  {
+@media only screen and (min-width: 280px) and (max-width: 767px)  {
   .card {
     width: calc(90% - 1rem);
   }
