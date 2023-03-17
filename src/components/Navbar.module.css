@@ -28,6 +28,17 @@
   right: 0;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .shopCardIcon {
+    position: relative;
+    border: none;
+    background-color: rgb(229, 216, 216);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    left: 75%;
+    bottom: 30%;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .shopCardIcon {
@@ -38,17 +49,5 @@
     padding: 0.5rem;
     left: 85%;
     bottom: 51%;
-  }
-}
-
-@media only screen and (min-width: 280px) and (max-width: 767px) {
-  .shopCardIcon {
-    position: relative;
-    border: none;
-    background-color: rgb(229, 216, 216);
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    left: 75%;
-    bottom: 30%;
   }
 }
