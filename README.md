@@ -3,9 +3,11 @@
 This is a shopping cart application built with React.
 
 ## Features
+
 - Displays a list of furniture products fetched from an API endpoint
 - Allows users to add or remove items from their cart
 - Calculates the total cost of items in the cart using the retail price
+- If user tries to add more items than available, an error message is displayed
 - Responsive design for desktop, tablet, and mobile devices
 
 ## Installation
