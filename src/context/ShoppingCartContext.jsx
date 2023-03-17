@@ -3,7 +3,6 @@ import ShoppingCart from '../components/ShoppingCart';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-
 const ShoppingCartContext = createContext({});
 
 export function useShoppingCart() {
@@ -35,6 +34,8 @@ export function ShoppingCartProvider({ children }) {
 
   useEffect(() => {
     fetchProducts();
+    // Clean up function to remove all items from the cart when the component is unmounted
+    return () => setProducts([]);
   }, []);
 
   function getItemQuantity(id) {
@@ -56,8 +57,9 @@ export function ShoppingCartProvider({ children }) {
             icon: 'error',
             title: 'Sorry!',
             text: `There is only ${product.stockQty} items available.`,
-            footer: '<a href="https://fulhaus.com/contact-us">Contact us to pre-order it!</a>'
-          })
+            footer:
+              '<a href="https://fulhaus.com/contact-us">Contact us to pre-order it!</a>',
+          });
           return currItems;
         }
       } else {
@@ -90,7 +92,7 @@ export function ShoppingCartProvider({ children }) {
 
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
-  
+
   return (
     <ShoppingCartContext.Provider
       value={{
