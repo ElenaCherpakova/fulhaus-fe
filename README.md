@@ -21,6 +21,6 @@ This is a shopping cart application built with React.
 
 - React
 - Axios
-- Tailwind CSS
+- Tailwind and CSS for styling
 - React Icons
 - sweetalert2
